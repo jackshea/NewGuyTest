@@ -63,7 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Character\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\Core\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Core\Character\Package.cs" />
+    <Compile Include="Assets\Scripts\Core\Common\Entity.cs" />
+    <Compile Include="Assets\Scripts\Core\Foods\Food.cs" />
+    <Compile Include="Assets\Scripts\Core\Foods\FoodsManager.cs" />
+    <Compile Include="Assets\Scripts\Core\Foods\FoodType.cs" />
+    <Compile Include="Assets\Scripts\View\Camera\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\View\Character\CharacterMovement.cs" />
+    <Compile Include="Assets\Scripts\View\Character\CharacterView.cs" />
+    <Compile Include="Assets\Scripts\View\Common\ResourceManager.cs" />
+    <Compile Include="Assets\Scripts\View\Foods\FoodManagerView.cs" />
+    <Compile Include="Assets\Scripts\View\Foods\FoodView.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Projects/NewGuyTest/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
