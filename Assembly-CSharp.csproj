@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\SampleScenes\ProtectCameraFromWallClip.cs" />
     <Compile Include="Assets\Scripts\Core\Character\Character.cs" />
     <Compile Include="Assets\Scripts\Core\Character\Package.cs" />
     <Compile Include="Assets\Scripts\Core\Common\Entity.cs" />
