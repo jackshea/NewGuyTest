@@ -1,8 +1,9 @@
-﻿using Core.Foods;
+﻿using Core.Characters;
+using Core.Foods;
 using UnityEngine;
 using View.Foods;
 
-namespace View.Character
+namespace View.Characters
 {
     public class CharacterView : MonoBehaviour
     {
@@ -19,7 +20,7 @@ namespace View.Character
             var foodView = other.gameObject.GetComponent<FoodView>();
             if (foodView == null) return;
 
-            Core.Character.Character.Instance.Packaget.ObtainFood(foodView.Food);
+            Character.Instance.Packaget.ObtainFood(foodView.Food);
             FoodsManager.Instance.RemoveFood(foodView.Food.Id);
         }
     }

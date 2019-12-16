@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 // 角色移动
-namespace View.Character
+namespace View.Characters
 {
     public class CharacterMovement : MonoBehaviour
     {

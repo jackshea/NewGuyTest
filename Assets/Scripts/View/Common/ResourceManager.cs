@@ -7,6 +7,7 @@ namespace View.Common
 {
     public class ResourceManager : MonoBehaviour
     {
+        [SerializeField] private Sprite[] FoodIcon;
         [SerializeField] private GameObject[] FoodPrefabs;
 
         public static ResourceManager Instance { get; private set; }
@@ -29,6 +30,11 @@ namespace View.Common
             var foodView = foodGo.AddComponent<FoodView>();
             foodView.Food = food;
             return foodGo;
+        }
+
+        public Sprite GetFoodIcon(FoodType type)
+        {
+            return Array.Find(FoodIcon, p => p.name == type.ToString());
         }
     }
 }

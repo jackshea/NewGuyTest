@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Core.Foods;
 
-namespace Core.Character
+namespace Core.Characters
 {
     /// <summary>
     ///     背包

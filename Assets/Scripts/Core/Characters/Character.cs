@@ -1,4 +1,4 @@
-﻿namespace Core.Character
+﻿namespace Core.Characters
 {
     /// <summary>
     ///     角色
