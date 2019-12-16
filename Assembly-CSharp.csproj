@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Core\Characters\Backpack.cs" />
     <Compile Include="Assets\Scripts\Core\Characters\Character.cs" />
-    <Compile Include="Assets\Scripts\Core\Characters\Package.cs" />
     <Compile Include="Assets\Scripts\Core\Common\Entity.cs" />
     <Compile Include="Assets\Scripts\Core\Foods\Food.cs" />
     <Compile Include="Assets\Scripts\Core\Foods\FoodsManager.cs" />

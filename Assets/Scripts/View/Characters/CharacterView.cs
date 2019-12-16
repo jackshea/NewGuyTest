@@ -11,16 +11,12 @@ namespace View.Characters
         {
         }
 
-        private void Update()
-        {
-        }
-
         private void OnTriggerEnter(Collider other)
         {
             var foodView = other.gameObject.GetComponent<FoodView>();
             if (foodView == null) return;
 
-            Character.Instance.Packaget.ObtainFood(foodView.Food);
+            Character.Instance.Backpack.ObtainFood(foodView.Food);
             FoodsManager.Instance.RemoveFood(foodView.Food.Id);
         }
     }

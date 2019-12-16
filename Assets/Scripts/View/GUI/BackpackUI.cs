@@ -16,15 +16,15 @@ namespace View.GUI
             EventTriggerListener.Get(refs["Close"]).OnClick += Close_OnClick;
             var foods = refs["Foods"];
             _itemList = foods.GetComponent<ItemList>();
-            Character.Instance.Packaget.OnObtainedFood += HandleOnObtainedFood;
-            Character.Instance.Packaget.OnDroppedFood += HandleOnDroppedFood;
+            Character.Instance.Backpack.OnObtainedFood += HandleOnObtainedFood;
+            Character.Instance.Backpack.OnDroppedFood += HandleOnDroppedFood;
             Refresh();
         }
 
         private void OnDestroy()
         {
-            Character.Instance.Packaget.OnObtainedFood -= HandleOnObtainedFood;
-            Character.Instance.Packaget.OnDroppedFood -= HandleOnDroppedFood;
+            Character.Instance.Backpack.OnObtainedFood -= HandleOnObtainedFood;
+            Character.Instance.Backpack.OnDroppedFood -= HandleOnDroppedFood;
         }
 
         private void HandleOnDroppedFood(Food obj)
@@ -45,9 +45,9 @@ namespace View.GUI
         private void Refresh()
         {
             _itemList.Reset();
-            for (var i = 0; i < Character.Instance.Packaget.Foods.Count; i++)
+            for (var i = 0; i < Character.Instance.Backpack.Foods.Count; i++)
             {
-                var food = Character.Instance.Packaget.Foods[i];
+                var food = Character.Instance.Backpack.Foods[i];
                 _itemList.Refresh(i, food, DrawFood);
             }
         }
@@ -56,6 +56,7 @@ namespace View.GUI
         {
             var foodItem = itemGo.GetComponent<FoodItem>();
             foodItem.name = food.FoodType + "_" + food.Id;
+            foodItem.FoodId = food.Id;
             var foodIcon = ResourceManager.Instance.GetFoodIcon(food.FoodType);
             foodItem.SetIcon(foodIcon);
         }

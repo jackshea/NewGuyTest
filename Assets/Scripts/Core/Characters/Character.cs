@@ -7,10 +7,10 @@
     {
         private Character()
         {
-            Packaget = new Package();
+            Backpack = new Backpack();
         }
 
         public static Character Instance { get; } = new Character();
-        public Package Packaget { get; }
+        public Backpack Backpack { get; }
     }
 }

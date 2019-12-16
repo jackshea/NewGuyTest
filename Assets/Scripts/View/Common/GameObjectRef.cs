@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 对象引用工具组件
 namespace View.Common
 {
+    // 对象引用工具组件
     public class GameObjectRef : MonoBehaviour, IEnumerable<KeyValuePair<string, GameObject>>
     {
         public string[] Names;

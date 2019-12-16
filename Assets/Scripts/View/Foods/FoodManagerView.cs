@@ -40,7 +40,7 @@ namespace View.Foods
         {
             var foodGo = ResourceManager.Instance.InstantiateFood(food);
             foodGo.transform.SetParent(transform);
-            foodGo.transform.localPosition = new Vector3(Random.Range(0, Range), 0, Random.Range(0, Range));
+            foodGo.transform.localPosition = new Vector3(Random.Range(0f, Range), 0, Random.Range(0f, Range));
             foodView.Add(food.Id, foodGo);
         }
     }

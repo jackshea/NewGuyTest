@@ -5,6 +5,7 @@ using View.Foods;
 
 namespace View.Common
 {
+    // 简单的资源引用
     public class ResourceManager : MonoBehaviour
     {
         [SerializeField] private Sprite[] FoodIcon;

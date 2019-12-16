@@ -7,7 +7,7 @@ namespace Core.Characters
     /// <summary>
     ///     背包
     /// </summary>
-    public class Package
+    public class Backpack
     {
         public List<Food> Foods { get; } = new List<Food>();
         public event Action<Food> OnObtainedFood;
@@ -40,6 +40,11 @@ namespace Core.Characters
             if (success) OnDroppedFood?.Invoke(food);
 
             return success;
+        }
+
+        public Food GetFood(int foodId)
+        {
+            return Foods.Find(p => p.Id == foodId);
         }
     }
 }

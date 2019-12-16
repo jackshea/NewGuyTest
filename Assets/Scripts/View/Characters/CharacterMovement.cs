@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-// 角色移动
 namespace View.Characters
 {
+    // 角色移动
     public class CharacterMovement : MonoBehaviour
     {
         private Animator _animator;
